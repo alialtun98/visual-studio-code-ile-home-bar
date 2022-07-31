@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <style>
+        *{
+padding: 0;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background: #262626;
+        }
+        .container{
+position: relative;
+width: 100%;
+
+        }
+        .container section{
+            position: relative;
+width: 100%; height: 100vh;
+line-height: 100vh;
+        }
+        .container section:nth-of-type(2n+1){
+    background: #fcfbf9;
+        }
+        .container section:nth-of-type(2n){
+            background: #f8f6f1;
+        }
+        .container section h1{
+            text-align: center;
+            font-size: 70px;
+            text-transform: uppercase;
+        }
+        .container ul{
+            position: fixed;
+            top: 0; left: 0;
+            background: #262626;
+            width: 100%; height: 60px;
+            z-index: 10;
+        }
+        .container ul li{
+            list-style: none;
+            width: calc(100% / 5); height: 100%;
+            float: left;
+        }
+        .container ul li a{
+            display: inline-block;
+            width: 100%; height: 100%;
+            text-align: center; line-height: 60px;
+            text-decoration: none; text-transform: uppercase;
+            color: #fff;
+        }
+        .container ul li a:hover{
+            background: #ff5722;
+        }
+       </style>
+</head>
+<body>
+
+    <div class="container"> 
+         <ul>
+        <li><a href="#sec1">Home</a></li>
+        <li><a href="#sec2">About</a></li>
+        <li><a href="#sec3">Contact</a></li>
+        <li><a href="#sec4">Social</a></li>
+        <li><a href="#sec5">Feedback</a></li>
+      </ul>
+
+      <section id="sec1"><h1>Home</h1></section>
+      <section id="sec2"><h1>About </h1></section>
+      <section id="sec3"><h1>Contact </h1></section>
+      <section id="sec4"><h1>Social</h1></section>
+      <section id="sec5"><h1>Feedback</h1></section>
+    </div>
+</body>
+</html>
